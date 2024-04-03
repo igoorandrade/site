@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Pergunta ao Usuário o valor da prestação
+        let valor = parseFloat(prompt("Insira o valor da prestação: "));
+        
+        // Pergunta ao usuário a taxa de juros
+        let taxa = parseFloat(prompt("Insira a taxa de juros (em %): "));
+
+        // Pergunta ao usuário o tempo de atraso em dias
+        let tempo = parseFloat(prompt("Insira o tempo de atraso em dias: "));
+
+        // Calcula o valor da prestação em atraso
+        let prestacao = valor + (valor * (taxa / 100) * tempo);
+
+        // Apresenta o valor da prestação em atraso
+        alert(`O valor da prestação em atraso é: R$ ${prestacao.toFixed(2)}`);
+
+    
+    </script>
+</body>
+</html>
